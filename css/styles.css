@@ -1,0 +1,69 @@
+:root{
+    --studio-color: #141F25;
+    --studio-color2: #C39544;
+    --gap: 2rem;
+    font-family: monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html, body {
+    height: 100%;
+    background-color: var(--studio-color);
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+/* CSS SYSTEMS */
+
+.wrapper {
+    display: block;
+    position: relative;
+    left: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+/* TOP NAV CONTENT */
+
+#top-header {
+    padding: 2rem;
+    background-color: var(--studio-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    height: 10rem;
+    width: auto;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+#navHeader {
+    display: flex;
+    gap: 2rem;
+}
+
+#navHeader a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.2s ease;
+}
+
+#navHeader a:hover {
+    color: #ff79c6;
+}
